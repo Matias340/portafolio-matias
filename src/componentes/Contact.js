@@ -69,7 +69,7 @@ const useStyles = makeStyles()((theme) => ({
      justifyContent: 'space-between',
      paddin: theme.spacing(4),
      '& button': {
-        backgroundColor: '#186FEC',
+        backgroundColor: '#000',
         color: '#fff',
         fontWeight: 900,
         fontSize: '1.2rem',
@@ -78,7 +78,7 @@ const useStyles = makeStyles()((theme) => ({
      },
      "& button:hover": {
         cursor: 'pointer',
-        backgroundColor: '#186FEC',
+        backgroundColor: '#000',
         color: '#fff',
      },
      [theme.breakpoints.down('sm')]: {

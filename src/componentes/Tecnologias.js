@@ -46,6 +46,8 @@ const Tecnologias = () => {
 
 
   return (
+    <div>
+    <Typography variant='h4'>Conocimientos</Typography>  
     <Timeline align='left'>
      {
        skills.map(({year, src, title, stars}, index) => (
@@ -71,6 +73,7 @@ const Tecnologias = () => {
         ))
      }
     </Timeline> 
+    </div>
   )
 }
 

@@ -10,7 +10,7 @@ const HomePages = () => {
   return (
     <div>
       <Navbar />
-      <About title="Sobre mi" id="about"/>
+      <About id="about"/>
       <Skills title="Habilidades y Conocimientos" id="skills" />
       <MyWork title="Mis Proyectos" id="work" />
       <Contact title="Contacto" id="contact" />

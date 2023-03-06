@@ -1,7 +1,7 @@
 import React from 'react'
-import { Typography } from '@mui/material'
 import { makeStyles } from "tss-react/mui";
 import Tecnologias from './Tecnologias';
+import Cursos from './Cursos';
 
 
 const Skills = ({title, id}) => {
@@ -9,8 +9,10 @@ const Skills = ({title, id}) => {
   return (
     <div className={classes.section}>
        <div className={classes.sectionContent} id={id}>
-         <Typography variant='h3' style={{ marginBottom: '80px' }}>{title}</Typography>
+      <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>  
+         <Cursos />
          <Tecnologias />
+      </div>    
        </div> 
     </div>
   )

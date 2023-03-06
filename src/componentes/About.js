@@ -21,7 +21,7 @@ const About = ({ id }) => {
          </Typography>
               <Button variant="outlined" className={classes.pdfButton}>
                 <a href={pdf} download='CV Matias Andres.pdf'>
-                Download CV
+                Descargar CV
                 </a>
               </Button>
        </div> 

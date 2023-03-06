@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Typography, } from '@mui/material';
 import pdf from '../imagenes/cv.pdf';
+import fondo from '../imagenes/fondo.jpg';
 import { makeStyles } from "tss-react/mui";
 
 const About = ({ title, id }) => {
@@ -23,7 +24,10 @@ const About = ({ title, id }) => {
 const useStyles = makeStyles()((theme) => ({
    section: {
       minHeight: "120vh",
-      backgroundColor: '#000',
+      backgroundImage: `url(${fondo})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+
    },
    sectioncontent: {
       maxWidth: '120vh',

@@ -1,5 +1,5 @@
 import React from 'react'
-import udemy from '../imagenes/udemy.png';
+import udemy from '../imagenes/udemy2.png';
 import { Typography, Card, CardMedia } from '@mui/material';
 import ComputerIcon from '@mui/icons-material/Computer';
 import { makeStyles } from "tss-react/mui";
@@ -23,11 +23,11 @@ const Cursos = () => {
     <Typography variant='h4'>Cursos y Estudios</Typography>
      {
        cursos.map(({ src, title}, index) => (
-         <Card sx={{ display: 'flex', marginBottom: '50px', marginTop: '30px' }}>
+         <Card elevation={3} sx={{ display: 'flex', marginBottom: '50px', marginTop: '30px' }}>
             <CardMedia>
             <img src={src} alt={title} className={classes.customlogo} />
             </CardMedia>
-            <Typography style={{ paddingTop: '25px', paddingRight: '20px', alignItems: 'center', justifyContent: 'center', display: 'flex', width: '170px' }} variant='h8' component='h3'>
+            <Typography style={{ paddingBottom: '5px', paddingTop: '5px',  paddingRight: '20px', alignItems: 'center', justifyContent: 'center', display: 'flex', width: '170px' }} variant='h8' component='h3'>
                 {title}
             </Typography>
         </Card>       
@@ -37,7 +37,7 @@ const Cursos = () => {
      <Typography variant='h4' style={{ marginTop: '80px' }}>
         Experiencia Laboral
      </Typography>
-     <Card sx={{ display: 'flex', marginTop: '50px' }}>
+     <Card  elevation={3} sx={{ paddingBottom: '5px', paddingTop: '5px', display: 'flex', marginTop: '50px' }}>
             <CardMedia>
               <ComputerIcon className={classes.customIcon}/>
             </CardMedia>
@@ -51,9 +51,9 @@ const Cursos = () => {
 
 const useStyles = makeStyles()((theme) => ({
     customlogo: {
-       width: '120px',
-       height: '70px',
-       marginTop: '18px',
+       width: '180px',
+       height: '80px',
+       marginTop: '10px',
        marginRight: '20px',
        [theme.breakpoints.down('sm')]: {
          width: '70px',

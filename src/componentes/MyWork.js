@@ -47,12 +47,13 @@ const useStyles = makeStyles()((theme) => ({
     padding: theme.spacing(5),
   },
   grid: {
-    marginTop: theme.spacing(5),
+    marginTop: theme.spacing(15),
   },
   card: {
     maxWidth: 345,
     minHeight: 275,
     marginLeft: '440px',
+    
   },
   caratula: {
     height: 0,

@@ -161,12 +161,12 @@ const useStyles = makeStyles()((theme) => ({
     left: 10,
   },
   sidebar: {
-    width: '40vw',
+    width: '50vw',
     [theme.breakpoints.down('sm')]:{
        width: '70vw',
     },
     [theme.breakpoints.down('md')]:{
-      width: '40vw',
+      width: '60vw',
    },
     "& h5": {
        margin: theme.spacing(10, 0, 0, 0),

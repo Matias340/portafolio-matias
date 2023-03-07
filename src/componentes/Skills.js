@@ -9,7 +9,7 @@ const Skills = ({title, id}) => {
   return (
     <div className={classes.section}>
        <div className={classes.sectionContent} id={id}>
-      <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>  
+      <div className={classes.subsection}>  
          <Cursos />
          <Tecnologias />
       </div>    
@@ -21,8 +21,21 @@ const Skills = ({title, id}) => {
 const useStyles = makeStyles()((theme) => ({
   section: {
      minHeight: "70vh",
-     marginTop: '70px'
+     marginTop: '70px',
+     [theme.breakpoints.down('md')]:{
+      minHeight: "20vh",
+    },
+    [theme.breakpoints.up('md')]:{
+      minHeight: "20vh",
+    }
   },
+  subsection: {
+    display: 'flex', 
+    justifyContent: 'space-evenly',
+    [theme.breakpoints.down('sm')]:{
+      display: 'block'
+    },
+  }
 }));
 
 export default Skills

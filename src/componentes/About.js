@@ -38,16 +38,27 @@ const useStyles = makeStyles()((theme) => ({
       position: 'relative',
       height: '50px',
       overflow: 'hidden',
+      [theme.breakpoints.down('md')]: {
+         minHeight: "85vh",
+      },
+      [theme.breakpoints.up('md')]: {
+         minHeight: "80vh",
+      }
    },
    sectioncontent: {
       maxWidth: '220vh',
       margin: '0 auto',
       backgroundColor: 'rgba(0,0,0,0.8)',
       [theme.breakpoints.down('sm')]: {
-         maxWidth: '50vh'
+         maxWidth: '50vh',
+         height: '1000px',
       },
       [theme.breakpoints.down('md')]: {
-         maxWidth: '60vh'
+         maxWidth: '90vh',
+         height: '1000px',
+      },
+      [theme.breakpoints.up('md')]: {
+         height: '1500px',
       }
    },
    pdfButton: {

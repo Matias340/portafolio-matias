@@ -115,6 +115,9 @@ const useStyles = makeStyles()((theme) => ({
     "&:hover": {
        cursor: 'pointer'
     },
+    [theme.breakpoints.up('sm')]: {
+      marginRight: '90px',
+    },
   },
   menu:{
     [theme.breakpoints.down('sm')]: {
@@ -122,6 +125,15 @@ const useStyles = makeStyles()((theme) => ({
     },
     [theme.breakpoints.down('md')]: {
       display: 'none'
+  },
+   
+  [theme.breakpoints.up('sm')]: {
+    display: 'none'
+  },
+  [theme.breakpoints.up('md')]: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems:'center',
   },
     
     "& a": {

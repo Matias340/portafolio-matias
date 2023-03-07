@@ -19,25 +19,25 @@ const Cursos = () => {
       ]
 
   return (
-    <div>
-    <Typography variant='h4'>Cursos y Estudios</Typography>
+    <div className={classes.espacio}>
+    <Typography className={classes.titulo} variant='h4'>Cursos y Estudios</Typography>
      {
        cursos.map(({ src, title}, index) => (
-         <Card elevation={3} sx={{ display: 'flex', marginBottom: '50px', marginTop: '30px' }}>
+         <Card className={classes.card} elevation={3} sx={{ display: 'flex', marginBottom: '50px', marginTop: '30px' }}>
             <CardMedia>
             <img src={src} alt={title} className={classes.customlogo} />
             </CardMedia>
-            <Typography style={{ paddingBottom: '5px', paddingTop: '5px',  paddingRight: '20px', alignItems: 'center', justifyContent: 'center', display: 'flex', width: '170px' }} variant='h8' component='h3'>
+            <Typography className={classes.texto} style={{ paddingBottom: '5px', paddingTop: '5px',  paddingRight: '20px', alignItems: 'center', justifyContent: 'center', display: 'flex', width: '170px' }} variant='h8' component='h3'>
                 {title}
             </Typography>
         </Card>       
         ))
      }
 
-     <Typography variant='h4' style={{ marginTop: '80px' }}>
+     <Typography className={classes.tituloSkills} variant='h4' style={{ marginTop: '80px' }}>
         Experiencia Laboral
      </Typography>
-     <Card  elevation={3} sx={{ paddingBottom: '5px', paddingTop: '5px', display: 'flex', marginTop: '50px' }}>
+     <Card  className={classes.card} elevation={3} sx={{ paddingBottom: '5px', paddingTop: '5px', display: 'flex', marginTop: '50px' }}>
             <CardMedia>
               <ComputerIcon className={classes.customIcon}/>
             </CardMedia>
@@ -56,8 +56,11 @@ const useStyles = makeStyles()((theme) => ({
        marginTop: '10px',
        marginRight: '20px',
        [theme.breakpoints.down('sm')]: {
-         width: '70px',
-       }
+         width: '140px',
+       },
+       [theme.breakpoints.down('md')]: {
+        width: '180px',
+      }
     },
     customIcon: {
        width: '120px',
@@ -66,7 +69,27 @@ const useStyles = makeStyles()((theme) => ({
        marginBottom: '8px',
        marginRight: '20px',
        
+    },
+    espacio: {
+       [theme.breakpoints.down('sm')]:{
+          marginBottom: '40px'
+       }
+    },
+    card: {
+    [theme.breakpoints.down('sm')]: {
+      width: '350px',
+      marginLeft: '10px'
+    },
+    [theme.breakpoints.down('md')]: {
+      width: '320px',
+      marginLeft: '5px',
+    },
+  },
+  texto: {
+    [theme.breakpoints.down('md')]: {
+      fontSize: '15px',
     }
+  },
  }));
 
 export default Cursos

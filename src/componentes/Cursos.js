@@ -72,7 +72,7 @@ const useStyles = makeStyles()((theme) => ({
     },
     espacio: {
        [theme.breakpoints.down('sm')]:{
-          marginBottom: '40px'
+          marginBottom: '40px',
        }
     },
     card: {

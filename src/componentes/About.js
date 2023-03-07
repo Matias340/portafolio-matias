@@ -39,7 +39,7 @@ const useStyles = makeStyles()((theme) => ({
       height: '50px',
       overflow: 'hidden',
       [theme.breakpoints.down('md')]: {
-         minHeight: "85vh",
+         minHeight: "95vh",
       },
       [theme.breakpoints.up('md')]: {
          minHeight: "80vh",

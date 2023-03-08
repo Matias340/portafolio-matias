@@ -54,8 +54,8 @@ const useStyles = makeStyles()((theme) => ({
          height: '1000px',
       },
       [theme.breakpoints.down('md')]: {
-         maxWidth: '90vh',
-         height: '1000px',
+         maxWidth: '190vh',
+         height: '1400px',
       },
       [theme.breakpoints.up('md')]: {
          height: '1500px',

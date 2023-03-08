@@ -77,12 +77,12 @@ const useStyles = makeStyles()((theme) => ({
     },
     card: {
     [theme.breakpoints.down('sm')]: {
-      width: '350px',
-      marginLeft: '10px'
+      display: 'flex',
+      justifyContent: 'center'
     },
     [theme.breakpoints.down('md')]: {
-      width: '320px',
-      marginLeft: '5px',
+      display: 'flex',
+      justifyContent: 'center',
     },
   },
   texto: {

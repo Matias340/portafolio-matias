@@ -54,7 +54,7 @@ const Tecnologias = () => {
             <TimelineItem key={index}>
               <TimelineOppositeContent>
                  <Typography variant='h6' color='textSecondary'>
-                   {year}
+                   
                  </Typography>
               </TimelineOppositeContent>
               <TimelineSeparator>
@@ -88,7 +88,7 @@ const useStyles = makeStyles()((theme) => ({
       padding: '6px 16px',
       maxWidth: '170px',
       [theme.breakpoints.down('sm')]: {
-        maxWidth: '140px',
+        maxWidth: '128px',
       }
    }
 }));

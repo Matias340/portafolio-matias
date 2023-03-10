@@ -4,15 +4,16 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import { makeStyles } from "tss-react/mui";
+import { ShoppingCart } from '@mui/icons-material';
+import { Badge } from '@mui/material';
 
 
 const Navbar = () => {
   const { classes } = useStyles();  
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="fixed" className={classes.appBar} >
         <Toolbar>
           <IconButton
             edge="start"
@@ -20,12 +21,22 @@ const Navbar = () => {
             aria-label="menu"
             className={classes.menuButton}
           >
-            <MenuIcon />
+            <p>imagen</p>
           </IconButton>
+          <div className={classes.grow} />
           <Typography className={classes.title} variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+            Hello Guest
           </Typography>
-          <Button color="inherit">Login</Button>
+          <div className={classes.button}>
+          <Button variant='outlined'>
+             <strong>Sign In</strong>
+          </Button>
+          <IconButton aria-label='show cart items' color='inherit'>
+             <Badge badgeContent={2} color='secondary'>
+               <ShoppingCart fontSize='large' />
+             </Badge>
+          </IconButton>
+          </div>
         </Toolbar>
       </AppBar>
       </div>
@@ -35,12 +46,20 @@ const Navbar = () => {
 const useStyles = makeStyles()((theme) => ({
     root: {
         flexGrow: 1,
+        marginBottom: '7rem',
     },
-    menuButton: {
-       marginRight: theme.spacing(2), 
+    appBar: {
+       boxShadow: 'none'
     },
-    title: {
-       flexGrow: 1,
+    grow:{
+      flexGrow: 1,
+    },
+    button: {
+      marginLeft: theme.spacing(2),
+    },
+    imagen: {
+       marginRight: '10px',
+       height: '1rem',
     }
   }));
 

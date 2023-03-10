@@ -12,6 +12,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { makeStyles } from "tss-react/mui";
 import { AddShoppingCart } from '@mui/icons-material';
 import accounting from 'accounting';
+import image from '../../imagenes/nike.jpeg';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -49,7 +50,7 @@ const Product = () => {
       />
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
+        image={image}
         title="Nike shoes"
       />
       <CardContent>

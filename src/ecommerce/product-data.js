@@ -5,7 +5,7 @@ const products = [
      productType: 'zapatillas running',
      price: 50,
      rating: 4,
-     image: '',
+     image: '../imagenes/nike.jpeg',
      description: 'zapatillas nike para correr con mejor comodidad para su uso'
    }
 ]

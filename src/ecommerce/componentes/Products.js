@@ -1,8 +1,8 @@
 import * as React from 'react';
-
 import Grid from '@mui/material/Grid';
 import { makeStyles } from "tss-react/mui";
 import Product from './Product';
+import products from '../product-data';
 
 
 const Products = () => {

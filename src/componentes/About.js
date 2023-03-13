@@ -13,16 +13,16 @@ const About = ({ id }) => {
   return (
     <div className={classes.section}>
        <div className={classes.sectioncontent} id={id}>
-         <Typography style={{ paddingTop: '80px', color: '#fff' }} variant='h3'>
+         <Typography style={{ paddingTop: '80px', color: '#fff', fontFamily: 'inherit' }} variant='h3'>
             Hola
          </Typography>
-         <Typography style={{ paddingTop: '20px', color: '#fff' }} variant='h3'>
-            mi nombre es Matias Andres
+         <Typography style={{ paddingTop: '20px', color: '#fff', fontFamily: 'inherit' }} variant='h3'>
+            Bienvenido a mi portafolio web!
          </Typography>
-         <Typography style={{ paddingTop: '40px', color: '#fff' }} variant='h5'>
-            soy desarrollador front-end en react y javascript
+         <Typography style={{ paddingTop: '40px', color: '#fff', fontFamily: 'inherit' }} variant='h5'>
+           mi nombre es Matias Andres y soy desarrollador Front-End  
          </Typography>
-         <Typography style={{ paddingTop: '40px', color: '#fff' }} variant='h5'>
+         <Typography style={{ paddingTop: '40px', color: '#fff', fontFamily: 'inherit' }} variant='h5'>
             Tecnologias que uso:
          </Typography>
          <div style={{ marginTop: '10px' }}>
@@ -78,6 +78,7 @@ const useStyles = makeStyles()((theme) => ({
    },
    pdfButton: {
       marginTop: '50px',
+      fontFamily: 'inherit',
       marginBottom: '140px',
       border: '1px solid #fff',
       padding: '10px',

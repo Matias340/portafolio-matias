@@ -90,6 +90,9 @@ const useStyles = makeStyles()((theme) => ({
       fontSize: '15px',
     }
   },
+  titulo: {
+    fontFamily: 'inherit',
+  }
  }));
 
 export default Cursos

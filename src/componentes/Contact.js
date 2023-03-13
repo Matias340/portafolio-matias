@@ -56,6 +56,12 @@ const useStyles = makeStyles()((theme) => ({
      flexDirection: 'column',
      justifyContent: 'flex-start',
      alignItems: 'center',
+     [theme.breakpoints.up('md')]: {
+      minHeight: "35vh",
+   },
+   [theme.breakpoints.down('md')]: {
+    minHeight: "15vh",
+ },
   },
   root:{
      border: '1px solid #202020',

@@ -12,7 +12,7 @@ const HomePages = () => {
       <Navbar />
       <About id="about"/>
       <Skills title="Habilidades y Conocimientos" id="skills" />
-      <MyWork title="Mis Proyectos" id="work" />
+      <MyWork title="Proyectos de muestra" id="work" />
       <Contact title="Contacto" id="contact" />
       <Footer />
     </div>

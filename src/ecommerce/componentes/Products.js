@@ -2,7 +2,7 @@ import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import { makeStyles } from "tss-react/mui";
 import Product from './Product';
-import products from '../product-data';
+import datos from '../product-data';
 
 
 const Products = () => {
@@ -11,30 +11,13 @@ const Products = () => {
   return (
     <div className={classes.root}>
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-          <Product />
-        </Grid>
+        {
+           datos.map(dato =>(
+             <Grid item xs={12} sm={6} md={4} lg={3}>
+                <Product key={dato.id} dato={dato}/>
+             </Grid>
+           ))
+        }
       </Grid>
     </div>
   );

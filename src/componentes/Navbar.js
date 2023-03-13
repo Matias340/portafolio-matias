@@ -6,7 +6,7 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 import InfoIcon from '@mui/icons-material/Info';
 import { BuildTwoTone, ContactMailTwoTone, EmojiObjectsTwoTone } from '@mui/icons-material';
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '../imagenes/Apple.jpg';
+import logo from '../imagenes/portafolio2.jpg';
 import IconButton from '@mui/material/IconButton';
 import { Divider, Drawer, ListItem, ListItemIcon } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -109,7 +109,7 @@ const useStyles = makeStyles()((theme) => ({
     alignItems:'center',
   },
   logo: {
-    height: '3.5rem',
+    height: '2.5rem',
     objectFit: 'contain',
     marginRight: '220px',
     "&:hover": {

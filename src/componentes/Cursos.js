@@ -42,7 +42,7 @@ const Cursos = () => {
               <ComputerIcon className={classes.customIcon}/>
             </CardMedia>
             <Typography style={{ paddingRight: '20px', alignItems: 'center', justifyContent: 'center', display: 'flex', width: '220px' }} variant='h8' component='h3'>
-                10 meses de experiencia como desarrollador front-end en react
+                desarrollador front-end en react desde 2020
             </Typography>
         </Card>     
     </div>

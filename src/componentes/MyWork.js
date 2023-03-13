@@ -39,16 +39,24 @@ const useStyles = makeStyles()((theme) => ({
      minHeight: "75vh",
      marginTop: '70px',
      backgroundColor: '#000',
-     color: '#fff'
+     color: '#fff',
+     [theme.breakpoints.up('md')]: {
+      minHeight: "45vh",
+   },
+   [theme.breakpoints.down('md')]: {
+    minHeight: "15vh",
+ },
   },
+  
   sectionContent: {
     maxWidth: '90vw',
     margin: '0 auto',
     padding: theme.spacing(5),
     
+    
   },
   grid: {
-    marginTop: theme.spacing(15),
+    marginTop: theme.spacing(8),
     display: 'flex',
     justifyContent: 'center',
   },

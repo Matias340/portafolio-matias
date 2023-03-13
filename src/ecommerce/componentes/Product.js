@@ -12,7 +12,6 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { makeStyles } from "tss-react/mui";
 import { AddShoppingCart } from '@mui/icons-material';
 import accounting from 'accounting';
-import image from '../../imagenes/nike.jpeg';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -25,7 +24,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-const Product = () => {
+export default function Product ({dato : {id, name, productType, image, price, rating, description}}) {
   const [expanded, setExpanded] = React.useState(false);
   const { classes } = useStyles();
 
@@ -42,27 +41,27 @@ const Product = () => {
               variant='h5'
               color='textSecondary'
             >
-              {accounting.formatMoney(50, '$')}
+              {accounting.formatMoney(price, '$')}
             </Typography>
         }
-        title="Shoes"
+        title={name}
         subheader="in Stock"
       />
       <CardMedia
         className={classes.media}
         image={image}
-        title="Nike shoes"
+        title={name}
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-           Running Shoes
+           {productType}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="Add to Cart">
            <AddShoppingCart fontSize='large' />
         </IconButton>
-        {Array(4)
+        {Array(rating)
           .fill()
           .map((_, i) => (
             <p>&#11088;</p>
@@ -80,7 +79,7 @@ const Product = () => {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>
-            zapatillas de deporte para correr
+            {description}
           </Typography>
         </CardContent>
       </Collapse>
@@ -110,5 +109,3 @@ const useStyles = makeStyles()((theme) => ({
         transform: 'rotate(180deg)',
     }
   }));
-
-export default Product;

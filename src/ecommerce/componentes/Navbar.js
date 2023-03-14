@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import { makeStyles } from "tss-react/mui";
 import { ShoppingCart } from '@mui/icons-material';
 import { Badge } from '@mui/material';
-
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 const Navbar = () => {
   const { classes } = useStyles();  
@@ -21,7 +21,7 @@ const Navbar = () => {
             aria-label="menu"
             className={classes.menuButton}
           >
-            <p>imagen</p>
+            <LocalMallIcon />
           </IconButton>
           <div className={classes.grow} />
           <Typography className={classes.title} variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -60,7 +60,7 @@ const useStyles = makeStyles()((theme) => ({
     imagen: {
        marginRight: '10px',
        height: '1rem',
-    }
+    },
   }));
 
 export default Navbar;
